@@ -14,9 +14,8 @@ class HomeController extends Controller
      */
     public function top()
     {
-      //return view('front.page.template.top');
       $companies = Company::all();
-      return view('front.page.top.top', compact('companies'));
+      return view('front.page.template.top', compact('companies'));
 
     }
 
@@ -25,9 +24,10 @@ class HomeController extends Controller
      */
     public function about()
     {
-      //return view('front.page.template.about');
-      $users = User::with('company')->get();
-      return view('front.page.top.about', compact('users'));
+      $companies = Company::get();
+      return view('front.page.template.about')->with(['companies' => $companies]);
+      //$users = User::with('company')->get();
+      //return view('front.page.template.about', compact('users'));
 
     }
 }

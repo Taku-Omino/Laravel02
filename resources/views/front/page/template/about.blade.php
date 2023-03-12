@@ -7,10 +7,10 @@
     <div class="main">
         <h1 class="page-name">aboutページです。</h1>
         <h2>ユーザー一覧</h2>
-        @foreach($users as $user)
+        @foreach($companies as $company)
         <div class="user-card">
-            <p>{{$user->name}}</p>
-            <p>所属企業：{{ $user->company->name}}</p>
+            <p>ユーザー名：{{$company->user_name}}</p>
+            <p>所属企業：{{ $company->company_name }}</p>
         </div>
         @endforeach
     </div>

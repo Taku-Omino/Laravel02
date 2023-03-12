@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB; // 追加
 
 class CompaniesTableSeeder extends Seeder
 {
@@ -15,43 +16,43 @@ public function run()
     DB::table('companies')->insert([
         [
             'user_name' => 'Steve Jobs',
-            'workplace' => 'Apple'
+            'company_name' => 'Apple'
         ],
         [
             'user_name' => 'Bill Gates',
-            'workplace' => 'Microsoft'
+            'company_name' => 'Microsoft'
         ],
         [
             'user_name' => 'Mark Zuckerberg',
-            'workplace' => 'Facebook'
+            'company_name' => 'Facebook'
         ],
         [
             'user_name' => 'Jeff Bezos',
-            'workplace' => 'Amazon'
+            'company_name' => 'Amazon'
         ],
         [
             'user_name' => 'Larry Page',
-            'workplace' => 'Google'
+            'company_name' => 'Google'
         ],
         [
             'user_name' => 'Sergey Brin',
-            'workplace' => 'Google'
+            'company_name' => 'Google'
         ],
         [
             'user_name' => 'Elon Musk',
-            'workplace' => 'Tesla'
+            'company_name' => 'Tesla'
         ],
         [
             'user_name' => 'Jack Ma',
-            'workplace' => 'Alibaba'
+            'company_name' => 'Alibaba'
         ],
         [
             'user_name' => 'Masayoshi Son',
-            'workplace' => 'Softbank'
+            'company_name' => 'Softbank'
         ],
         [
             'user_name' => 'Hiroshi Mikitani',
-            'workplace' => 'Rakuten'
+            'company_name' => 'Rakuten'
         ]
     ]);
 }

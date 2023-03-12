@@ -9,7 +9,7 @@
         <h2>企業一覧</h2>
         @foreach($companies as $company)
         <div class="company-card">
-          <p>{{$company->name}}</p>
+          <p>{{$company->company_name}}</p>
         </div>
         @endforeach
     </div>
